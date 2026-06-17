@@ -11,7 +11,7 @@ body {
     touch-action: none;
 }
 
-#reset-btn {
+#reset-btn, #feedback-btn {
     position: absolute;
     top: 1rem;
     background-color: transparent;
@@ -23,9 +23,19 @@ body {
     border-radius: 8px;
     width: auto;
     height: auto;
+    text-decoration: none;
+    line-height: 1.2;
 }
 
-#reset-btn:hover {
+#reset-btn {
+    left: 1rem;
+}
+
+#feedback-btn {
+    right: 1rem;
+}
+
+#reset-btn:hover, #feedback-btn:hover {
     background-color: #eee;
 }
 
