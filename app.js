@@ -4,6 +4,7 @@ let count = parseInt(localStorage.getItem('counter')) || 0;
 const countDisplay = document.getElementById('count-display');
 const plusBtn = document.getElementById('plus-btn');
 const minusBtn = document.getElementById('minus-btn');
+const resetBtn = document.getElementById('reset-btn');
 
 function updateDisplay() {
     countDisplay.textContent = count;
@@ -17,6 +18,11 @@ plusBtn.addEventListener('click', () => {
 
 minusBtn.addEventListener('click', () => {
     count--;
+    updateDisplay();
+});
+
+resetBtn.addEventListener('click', () => {
+    count = 0;
     updateDisplay();
 });
 

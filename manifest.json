@@ -1,11 +1,11 @@
 {
-  "name": "Simple Counter PWA",
+  "name": "Counter",
   "short_name": "Counter",
   "description": "A simple counter app that works offline.",
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#4CAF50",
+  "theme_color": "#673ab7",
   "icons": [
     {
       "src": "icon.svg",
