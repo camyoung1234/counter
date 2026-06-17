@@ -11,9 +11,29 @@ body {
     touch-action: none;
 }
 
-#reset-btn {
-    position: absolute;
-    top: 1rem;
+.cards-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.counter-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+}
+
+.reset-btn {
     background-color: transparent;
     color: #666;
     font-size: 0.9rem;
@@ -23,21 +43,17 @@ body {
     border-radius: 8px;
     width: auto;
     height: auto;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-#reset-btn:hover {
+.reset-btn:hover {
     background-color: #eee;
 }
 
-.container {
-    text-align: center;
-    width: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-#count-display {
-    font-size: 8rem;
+.count-display {
+    font-size: 5rem;
     font-weight: 500;
     color: black;
     margin-bottom: 2rem;
@@ -46,12 +62,21 @@ body {
 }
 
 @media (max-width: 480px) {
-    #count-display {
-        font-size: 6rem;
+    .count-display {
+        font-size: 4rem;
     }
 
     button {
         padding: 1rem 2rem;
+    }
+
+    .cards-wrapper {
+        gap: 1rem;
+    }
+
+    .counter-card {
+        padding: 1.5rem;
+        min-width: 200px;
     }
 }
 
@@ -61,7 +86,7 @@ body {
     gap: 1.5rem;
 }
 
-button {
+button.btn {
     font-size: 2rem;
     width: 64px;
     height: 64px;
@@ -79,15 +104,15 @@ button {
     user-select: none;
 }
 
-button:focus-visible {
+button.btn:focus-visible {
     outline: 3px solid #5e35b1;
     outline-offset: 2px;
 }
 
-button:hover {
+button.btn:hover {
     background-color: #5e35b1;
 }
 
-button:active {
+button.btn:active {
     transform: scale(0.9);
 }

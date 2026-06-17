@@ -12,14 +12,24 @@
     <meta name="theme-color" content="#673ab7">
 </head>
 <body>
-    <button id="reset-btn">Reset</button>
-    <div class="container">
-        <div id="count-display">0</div>
-        <div class="buttons">
-            <button id="minus-btn" aria-label="Decrease count">-</button>
-            <button id="plus-btn" aria-label="Increase count">+</button>
+    <main class="cards-wrapper">
+        <div class="counter-card">
+            <button id="reset-btn-1" class="reset-btn">Reset</button>
+            <div id="count-display-1" class="count-display">0</div>
+            <div class="buttons">
+                <button id="minus-btn-1" class="btn minus-btn" aria-label="Decrease count">-</button>
+                <button id="plus-btn-1" class="btn plus-btn" aria-label="Increase count">+</button>
+            </div>
         </div>
-    </div>
+        <div class="counter-card">
+            <button id="reset-btn-2" class="reset-btn">Reset</button>
+            <div id="count-display-2" class="count-display">0</div>
+            <div class="buttons">
+                <button id="minus-btn-2" class="btn minus-btn" aria-label="Decrease count">-</button>
+                <button id="plus-btn-2" class="btn plus-btn" aria-label="Increase count">+</button>
+            </div>
+        </div>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
