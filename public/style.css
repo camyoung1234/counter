@@ -32,48 +32,42 @@ body {
 .container {
     text-align: center;
     width: 100%;
-}
-
-.counter-layout {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-    width: 100%;
-    max-width: 500px;
-    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 #count-display {
     font-size: 8rem;
     font-weight: 500;
     color: black;
-    flex: 1;
-    min-width: 120px;
-    text-align: center;
+    margin-bottom: 2rem;
     font-variant-numeric: tabular-nums;
+    text-align: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
     #count-display {
         font-size: 6rem;
     }
 
     button {
-        width: 56px;
-        height: 56px;
-        font-size: 1.5rem;
+        padding: 1rem 2rem;
     }
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
 }
 
 button {
     font-size: 2rem;
     width: 64px;
     height: 64px;
-    flex-shrink: 0;
     cursor: pointer;
     border: none;
-    border-radius: 50%;
+    border-radius: 8px;
     background-color: #673ab7;
     color: white;
     transition: background-color 0.2s, transform 0.1s;
