@@ -73,8 +73,9 @@ body {
     .cards-wrapper {
         gap: 1rem;
         flex-direction: column;
-        height: 100%;
+        height: 100dvh;
         flex-wrap: nowrap;
+        padding: 20px;
     }
 
     .counter-card {
