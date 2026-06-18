@@ -9,6 +9,10 @@ body {
     background-color: #f0f2f5;
     overflow: hidden;
     touch-action: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 .cards-wrapper {
