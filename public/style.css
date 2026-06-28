@@ -71,6 +71,30 @@ body {
     margin-bottom: 2rem;
     font-variant-numeric: tabular-nums;
     text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+[contenteditable="true"] {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+    cursor: text;
+    border-bottom: 2px dashed #ccc;
+    min-width: 0.5em;
+    outline: none;
+}
+
+[contenteditable="true"]:focus {
+    border-bottom: 2px solid #673ab7;
+}
+
+.separator {
+    margin: 0 0.2rem;
+    color: #666;
+    font-weight: 300;
 }
 
 @media (max-width: 480px) {
