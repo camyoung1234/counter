@@ -108,11 +108,18 @@ body {
 
     .cards-wrapper {
         gap: 1rem;
+        flex-direction: column;
+        height: 100dvh;
+        flex-wrap: nowrap;
+        padding: 20px;
     }
 
     .counter-card {
         padding: 1.5rem;
         min-width: 200px;
+        flex: 1;
+        width: 100%;
+        justify-content: center;
     }
 }
 
